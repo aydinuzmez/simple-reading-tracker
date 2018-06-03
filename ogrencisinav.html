@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Öğrenci Paneli</title>
+      <link href='http://fonts.googleapis.com/css?family=Playball' rel='stylesheet' type='text/css'>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+      <script src="js/jquery-min.js"></script>
+      <script src="js/bootstrap.js"></script>
+      <script src="js/jquery-ui.min.js"></script>
+
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+
+<script type="text/javascript">
+
+$(document).ready(function($){
+
+$("#sinavabasla1").click(function() {  
+
+  $("#modalsinav1").modal({                    // wire up the actual modal functionality and show the dialog
+      "backdrop"  : "static",
+      "keyboard"  : true,
+      "show"      : true                     // ensure the modal is shown immediately
+    });	
+	
+	 
+
+
+
+	});
+$("#sinavabasla2").click(function() {  
+
+ $("#modalyonerge2").modal({                    // wire up the actual modal functionality and show the dialog
+      "backdrop"  : "static",
+      "keyboard"  : true,
+      "show"      : true                     // ensure the modal is shown immediately
+    });	
+	
+
+
+ });
+ 
+ $("#sinavibaslat3").hide();
+ 
+ $('#kontrol').click(function() {
+    $("#sinavibaslat3").toggle(this.checked);
+	
+});
+
+ 
+ 
+ 
+
+ 
+});
+</script>
+
+  </head>
+<body>
+
+<div class="navbar">
+
+    <div class="navbar-left col col-lg-2"><a href="index.html" alt="Anasayfa">Öğrenci Paneli </a></div>
+	
+	
+    <div class="navbar-right" style="margin: 10px 20px 10px 20px;">
+	<span style="border-right:1px solid #fff; padding-right:10px; margin-right:10px;">	Çanakkale oğlu Ortaokulu </span>
+	Hoşgeldin, Mazhar   <span style="border-left:1px solid #fff; padding-left:10px; margin-left:10px;"> <a href="#">Çıkış</a></div> </span>
+	
+    
+    
+</div>
+
+
+<section class="sidebar col col-lg-2" style="padding-top:20px;  ">
+
+
+
+
+
+
+<div class="logo" style="margin:auto; width:80px;"> <img src="img/logo.png"  class="img-responsive" style="padding-bottom:20px;" alt="Kitas Logo" /> </div>
+
+   
+	
+
+
+
+<ul class="nav nav-pills nav-stacked">
+  <li role="presentation" ><a href="ogrenci.html"><span class="glyphicon glyphicon-home" style="margin-right:5px"></span> Anasayfa </a></li>
+  <li role="presentation"><a href="ogrencikitap.html"><span class="glyphicon glyphicon-check" style="margin-right:5px"></span> Kitap Seçimi</a></li>
+  <li role="presentation" class="active"><a href="ogrencisinav.html"><span class="glyphicon glyphicon-book" style="margin-right:5px"></span> Değerlendirme Testi</a></li>
+  <li role="presentation"><a href="ogrencirapor.html"><span class="glyphicon glyphicon-eye-open" style="margin-right:5px"></span> Okuma Durum Takibi</a></li>
+</ul>
+
+
+			
+			
+        
+
+
+<!-- Sınav gir-->
+<div class="modal fade" id="modalsinav1" >
+  <div class="modal-dialog" >
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" ><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Balım Kız Dalım Oğul Kitabı Değerlendirme Sınavı</h4>
+      </div>
+      <div class="modal-body">
+	  
+<div class="row" style="margin-top:10px;">
+
+      <img src="http://dummyimage.com/175x250/ffffff/000000" alt="Kitap Resmi" style="display:inline-block; float:left;">
+      <div class="caption" style=" margin:10px;">
+        <h5><strong>Kitap Adı:</strong> Balım Kız Dalım Oğul</h5>
+        <h5><strong>Yazar:</strong>	Ceyhun Atuf Kansu</h5>
+        <h5><strong>Türü:</strong> Deneme</h5>
+        <h5><strong>Sayfa Sayısı:</strong> 197</h5>
+        <h5><strong>Kitap Düzey Puanı:</strong> 51</h5>
+        <h5 style=" text-align: justify;"><strong>Konusu :</strong> CEYHUN ATUF KANSU'nun Balım Kız Dalım Oğul kitabı, Türkiye radyolarından yayımlanan "Anadolu Albümü"nün tümüdür. Dinleyicilerce çok sevilen bu konuşmalar, Anadolu'yu tanıtmada, sevdirmede ve güzel Türkçenin sesini duyurmada çocuklarımızı da etkileyecek, dinlendiği ölçüde sevilerek okunacaktır. "Bağımsızlıktır içtiğimiz, nisan gülüdür açtığımız ve de gezdik, gördük, dolaştık, sorana, durana vatan dağlarından kekiktir saçtığımız: Koklayana bu yurttur, verilesi değil; insan bir sevdi mi, Anadolu anadır, kardaştır, yârdır hiç ayrılası değil!"</h5>
+	
+
+      </div>
+
+  
+  </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" id="kapat" data-dismiss="modal">Kapat</button>
+        <a href="#"  type="button"  class="btn btn-primary"  id="sinavabasla2" data-toggle="modal"  >Sınav Oturumuna Gir</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bitiş Sınav gir-->
+
+
+<!-- SINAV YÖNERGESİ BAŞLANGIÇ -->
+
+<div class="modal fade" id="modalyonerge2" >
+  <div class="modal-dialog" >
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" ><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Sınav Yönergesi</h4>
+      </div>
+      <div class="modal-body">
+	  <p style="text-align:justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.<p>
+	  
+	  <div class="checkbox">
+  <label>
+    <input type="checkbox" id="kontrol" value="">
+    Sınav Yönergesini Okudum ve Kabul Ediyorum
+  </label>
+</div>
+	  
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Kapat</button>
+        <a href="sinavsoru.html" target="_blank" type="button"  id="sinavibaslat3" class="btn btn-primary">Sınavı Başlat</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SINAV YÖNERGESİ BİTİŞ -->
+
+
+	 <div class="panel panel-default" style="margin-top:30px;">
+  <div class="panel-heading" style="text-align:left;"><h5><span class="glyphicon glyphicon-user" style="padding-right:10px; font-size:18px;"> </span>Öğrenci Hakkında</h5></div>
+
+  <style type="text/css">.ogrencibilgi>h5 {  font-size:13px;  }</style>
+<div class="ogrencibilgi" style="text-align:left; padding:10px; ">
+  <div >
+<h5><strong>Adı : </strong> Emre</h5>
+<h5><strong>Numarası : </strong> 10</h5>
+<h5><strong>Sınıfı : </strong> 5 - A</h5>
+<h5><strong>Öğretmeni : </strong> Aytül</h5>
+<h5><strong>Okulu : </strong> Çanakkale oğlu</h5>
+<h5><strong>Veli Adı : </strong> AHMET</h5>
+<h5><strong>Tarih : </strong> 24.6.2015</h5>
+<h5><strong>Okunan Kitap Sayısı : </strong> 2</h5>
+<h5><strong>Düzey Puanı	: </strong> 42</h5>
+<h5><strong>Sınıf Düzey Puanı : </strong> 24</h5>
+
+</div>
+</div>
+</div>
+
+
+
+</section>
+
+
+<section class="main col-lg-10">
+
+
+
+<div class="giriskismi">
+
+<h3 style="margin-bottom:0; text-align:center;">  Sınav Bekleyen Kitaplar </h3> 
+<hr style="border-top:1px dotted #000; margin:5px 0 0 0;   border: 0;    height: 1px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));"> 
+	
+ <!-- ŞUAN OKUNAN KİTAP  -->
+	<div class="row" style="margin-top:10px;">
+	
+
+
+ <table class="table table-hover" style="margin-top:20px;">
+ <thead>
+        <tr>
+          <th>Sıra No</th>
+            <th>Kitabın Adı</th>
+            <th>Türü</th>
+            <th>Okunma Durumu</th>
+            <th>Bitirme Tarihi</th>
+            <th>Bitirme Süresi</th>
+            
+            
+       
+        </tr>
+    </thead>
+	 <tbody>
+            <tr>
+            <td>1</td>
+            <td>Halime Kaptan, Rıfat Ilgaz</td>
+            <td>Macera</td>
+            <td>Sınav Bekleniyor</td>
+			<td>22.6.2015</td>
+			<td>26</td>
+
+		
+			<td><a href="#" alt="" style="font-size:14px;"><strong> <button type="button" class="btn btn-default" style="font-size:12px;" data-toggle="modal" id="sinavabasla1"  >
+Sınava Gir
+</button>  </strong></a></div> </td>
+		
+        </tr>
+		 
+		
+		
+		
+    </tbody>
+</table>
+
+
+</div>
+
+
+
+  
+
+	
+</div>
+	
+
+</section>
+
+
+
+
+
+
+</body>
+</html>
